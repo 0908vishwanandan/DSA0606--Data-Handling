@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Employee performance)' inline='true' name='federated.1u43kgm1lr13e0103takl03yr3xw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Employee performance' name='excel-direct.11bkysb1cn1hh31g8rosr1th5fpk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Vishwa nandan Pakala/Downloads/Employee performance.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11bkysb1cn1hh31g8rosr1th5fpk' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D6:no:A1:D6:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Employee ID' ordinal='0' />
+            <column datatype='string' name='Department' ordinal='1' />
+            <column datatype='integer' name='Years of Service' ordinal='2' />
+            <column datatype='integer' name='Performance Score' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D6:no:A1:D6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employee ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Employee ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years of Service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years of Service]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Years of Service</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Performance Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Performance Score]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Performance Score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Employee ID]' role='dimension' type='ordinal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/VISHWA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_19shdfz1k560nj10s89lf1j4sz3h.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/14/2026 07:52:13 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Employee ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employee ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employee ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years of Service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years of Service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years of Service</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Performance Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Performance Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Performance Score</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_D1F438C8D3534F2ABE32408F02266CF4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_D1F438C8D3534F2ABE32408F02266CF4'>
+            <properties context=''>
+              <relation connection='excel-direct.11bkysb1cn1hh31g8rosr1th5fpk' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D6:no:A1:D6:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Employee ID' ordinal='0' />
+                  <column datatype='string' name='Department' ordinal='1' />
+                  <column datatype='integer' name='Years of Service' ordinal='2' />
+                  <column datatype='integer' name='Performance Score' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>192473015-Scatter plot (Set 3-Task3)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Employee performance)' name='federated.1u43kgm1lr13e0103takl03yr3xw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u43kgm1lr13e0103takl03yr3xw'>
+            <column datatype='string' name='[Department]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Employee ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Performance Score]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Years of Service]' role='measure' type='quantitative' />
+            <column-instance column='[Department]' derivation='None' name='[none:Department:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Employee ID]' derivation='None' name='[none:Employee ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Performance Score]' derivation='Sum' name='[sum:Performance Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Years of Service]' derivation='Sum' name='[sum:Years of Service:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1u43kgm1lr13e0103takl03yr3xw].[none:Employee ID:ok]' />
+              <lod column='[federated.1u43kgm1lr13e0103takl03yr3xw].[none:Department:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1u43kgm1lr13e0103takl03yr3xw].[sum:Performance Score:qk]</rows>
+        <cols>[federated.1u43kgm1lr13e0103takl03yr3xw].[sum:Years of Service:qk]</cols>
+      </table>
+      <simple-id uuid='{27871F45-0BB6-4705-A65C-BEF5C51B09E7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1u43kgm1lr13e0103takl03yr3xw].[none:Employee ID:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u43kgm1lr13e0103takl03yr3xw].[none:Department:nk]</field>
+            <field>[federated.1u43kgm1lr13e0103takl03yr3xw].[none:Employee ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E8078B45-A884-4258-8012-886D2ED7610B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
